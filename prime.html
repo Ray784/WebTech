@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Prime Checker</title>
+    </head>
+    <body>
+        <input type="number" name="input" id="input"><br>
+        <input type="submit" value="CHECK" onclick="checkPrime()">
+        <div id="result"></div>
+        <script>
+            function checkPrime(){
+                var result = document.getElementById("result");
+                var input = document.getElementById("input").value;
+                var prime =1;
+                for(var i=2;i<input;i++){
+                    if(input%i == 0 && input!=2){
+                        prime = 0;
+                        break;
+                    }
+                }
+                if(prime == 1){
+                    result.innerHTML = "A prime";
+                    result.style.color = "green";
+                }
+                else{
+                    result.innerHTML = "Not a prime";
+                    result.style.color = "red";
+                }
+            }
+        </script>
+    </body>
+</html>
