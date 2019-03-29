@@ -7,6 +7,7 @@
 			userId: <input id="userId" name="userId" type="text"><br>
 			userName: <input id="userName" name="userName" type="text"><br>
 			Password: <input id="password" name="password" type="password"><br>
+			Confirm Password:  <input id="cpassword" name="cpassword" type="password"><br>
 			Email: <input id="email" name="email" type="text"><br>
 			<input id="submit" name="submit" type="submit" value="submit">
 			<div id="error"></div>
@@ -18,21 +19,36 @@
 			var userName = document.getElementById("userName");
 			var email = document.getElementById("email");
 			var password = document.getElementById("password");
+			var cpassword = document.getElementById("cpassword");
+			
 			var req=1;
 			var ema=1;
+			var pass =1;
+			
 			function submitFunc(){
 				chkEmail();
 				required();
-				if(ema == 1 || req == 1)
+				chkPass();
+				if(ema == 1 || req == 1 || pass==1)
 					return false;
 				else
 					return true;
 				
 			}
 			
+			function chkPass(){
+				if(password.value === cpassword.value){
+					pass = 0;
+				}
+				else{
+					pass=1;
+					alert("Passwords don't match");
+				}
+			}
 			function required(){
 				if(userId.value === '' || userName.value === '' || password.value === '' || email.value === ''){
 						alert('All Fields are required');
+						req=1;
 					}
 					else
 						req=0;
