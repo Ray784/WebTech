@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Prime Checker</title>
+    </head>
+    <body>
+        <input type="number" name="input" id="input"><br>
+        <input type="submit" value="CHECK" onclick="checkLeap()">
+        <div id="result"></div>
+        <script>
+            function checkLeap(){
+                var result = document.getElementById("result");
+                var input = document.getElementById("input").value;
+                if(input % 400 == 0){
+                    result.innerHTML = "A Leap Year";
+                    result.style.color = "green";
+                }
+                else if(input % 100 == 0){
+                    result.innerHTML = "Not A Leap Year";
+                    result.style.color = "red";
+                }
+                else if(input % 4 == 0){
+                    result.innerHTML = "A Leap Year";
+                    result.style.color = "green";
+                }
+                else{
+                    result.innerHTML = "Not A Leap Year";
+                    result.style.color = "red";
+                }
+            }
+        </script>
+    </body>
+</html>
