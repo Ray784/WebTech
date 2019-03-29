@@ -1,0 +1,18 @@
+<web-app>
+    <servlet>
+        <servlet-name>abc</servlet-name>
+        <jsp-file>/login.jsp</jsp-file>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Abhay</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pass</param-name>
+            <param-value>abhay3006</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+</web-app>
