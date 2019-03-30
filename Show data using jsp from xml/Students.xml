@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<Students>
+	<student>
+		<roll-no>1</roll-no>
+		<name>Rajeev Ghosla</name>
+		<class>BTech III yr</class>
+		<section>A</section>
+		<email>rajeev@gmail.com</email>
+	</student>
+	<student>
+		<roll-no>2</roll-no>
+		<name>Raju Shukla</name>
+		<class>BTech III yr</class>
+		<section>B</section>
+		<email>rajuskl@gmail.com</email>
+	</student>
+	<student>
+		<roll-no>3</roll-no>
+		<name>Theodere Godsfury</name>
+		<class>BTech I yr</class>
+		<section>A</section>
+		<email>tGodFury@gmail.com</email>
+	</student>
+	<student>
+		<roll-no>4</roll-no>
+		<name>Rajesh Kootrapalli</name>
+		<class>BTech II yr</class>
+		<section>C</section>
+		<email>rajeshKpalli@gmail.com</email>
+	</student>
+	<student>
+		<roll-no>5</roll-no>
+		<name>Abhishek Nath</name>
+		<class>BTech IV yr</class>
+		<section>C</section>
+		<email>AkNath123@gmail.com</email>
+	</student>
+</Students>
